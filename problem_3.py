@@ -28,14 +28,15 @@ def rearrange_digits(input_list):
     second = ""
     one = 0
     two = 0
+
     input_list.sort(reverse=True)
     for i in range(0, len(input_list), 2):
-        first+=str(input_list[i])
-        if i+1 < len(input_list):
-            second+=str(input_list[i+1])
+        first += str(input_list[i])
+        if i + 1 < len(input_list):
+            second += str(input_list[i + 1])
     first = int(first)
     second = int(second)
-    return [first,second]
+    return [first, second]
 
 
 def test_function(test_case):
